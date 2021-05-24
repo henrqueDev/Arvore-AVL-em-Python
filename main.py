@@ -22,7 +22,7 @@ while True:
   if opcao == "1":
       
       try:
-        """
+        
         nome = input("\nDigite o nome da música -> ")
         album = input("\nDigite o nome do album -> ")
         ano = int(input("\nDigite o ano de lançamento -> "))
@@ -33,11 +33,11 @@ while True:
         cat.inserir("    Manteiga           ",2,2000,4)  
         cat.inserir("Carne",2,2000,5)
         cat.inserir("Carn",2,2000,3)
-        #cat.inserir("Carne",2,2000,4)
+        #cat.inserir("Carna",2,2000,4)
         cat.inserir("milhas",2,2002,2)
         cat.inserir("Duality",2,2000,6)
         print(cat.root)
-        
+        """
         time.sleep(5)
       except ValueError:
        print("Valor inválido! Digite Novamente!")
@@ -73,19 +73,8 @@ while True:
     except ValueError:
       print("Valor inválido! Digite novamente!")
       time.sleep(2)  
-  elif opcao == "6":
-    try:
-      
-     cat.exibir_Arvore()
-     print()
-     time.sleep(10)
-    except AttributeError:
-      print("Arvore Vazia!!")
-      time.sleep(2)
-  elif opcao == "5":
-    
-    print(f"\n A altura da arvore é -> {cat.altura(cat.root)}")
-    time.sleep(2)
+  
+  
   elif opcao == "4":
     vetor = []
     vet = cat.listar_ordem(cat.root,vetor)
@@ -97,5 +86,25 @@ while True:
       print("Musicas não encontradas!!")
       time.sleep(1)
     vetor = []
+  
+  elif opcao == "5":
+    
+    print(f"\n A altura da arvore é -> {cat.altura(cat.root)}")
+    time.sleep(2)
+    
+  elif opcao == "6":
+    try:
+      
+     cat.exibir_Arvore()
+     print()
+     time.sleep(10)
+    except AttributeError:
+      print("Arvore Vazia!!")
+      time.sleep(2)
+  
   elif opcao == "7":
     exit(0)
+  else:
+    print("Opção inválida! Digite Novamente!")
+    time.sleep(1)
+   
