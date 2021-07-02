@@ -1,4 +1,5 @@
 from musica import Musica
+
 class Catalogo:
 
     def __init__(self):
