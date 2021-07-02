@@ -153,42 +153,4 @@ class Catalogo:
     
     
     
-    """
-    def preorder(self, node, retlst = []):
-        #if retlst is None:
-        #    retlst = []
-        retlst.append(node.id)
-        if node.esq:
-            retlst = self.preorder(node.esq, retlst) 
-        if node.dir:
-            retlst = self.preorder(node.dir, retlst)
-        return retlst         
-           
-    def inorder(self, node, retlst = None):
-        if retlst is None:
-            retlst = [] 
-        if node.esq:
-            retlst = self.inorder(node.esq, retlst)
-        retlst += [node.id] 
-        if node.dir:
-            retlst = self.inorder(node.dir, retlst)
-        return retlst
-        
-    def postorder(self, node, retlst = None):
-        if retlst is None:
-            retlst = []
-        if node.esq:
-            retlst = self.postorder(node.esq, retlst) 
-        if node.dir:
-            retlst = self.postorder(node.dir, retlst)
-        retlst += [node.id]
-        return retlst
     
-
-
-    def em_ordem(self, arvore):
-        if arvore != None:
-          self.em_ordem(arvore.esq)
-          print(arvore.dado, end='')  #Visita a raiz
-          self.em_ordem(arvore.dir)
-    """
