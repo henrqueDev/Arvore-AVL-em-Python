@@ -28,16 +28,7 @@ while True:
         ano = int(input("\nDigite o ano de lançamento -> "))
         id = int(input("\nDigite o ID -> "))
         cat.inserir(nome,album,ano,id)
-        """
-        cat.inserir("Facarrao",2,2000,1)
-        cat.inserir("    Manteiga           ",2,2000,4)  
-        cat.inserir("Carne",2,2000,5)
-        cat.inserir("Carn",2,2000,3)
-        #cat.inserir("Carna",2,2000,4)
-        cat.inserir("milhas",2,2002,2)
-        cat.inserir("Duality",2,2000,6)
-        print(cat.root)
-        """
+        
         time.sleep(5)
       except ValueError:
        print("Valor inválido! Digite Novamente!")
