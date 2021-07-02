@@ -146,17 +146,7 @@ class Musica:
         self.rotacaoEsquerda()
 
  
-  """
-  def max_height(self):
-        if self.__esq and self.__dir:
-            return max(self.__esq.__height, self.__dir.__height)
-        elif self.__esq and not self.__dir:
-            return self.__esq.__height
-        elif not self.__esq and  self.__dir:
-            return self.__dir.__height
-        else:
-            return -1
-  """  
+ 
 
   def __str__(self):
     return f"{self.__id}"
